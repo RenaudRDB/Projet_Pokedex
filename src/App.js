@@ -1,11 +1,14 @@
-import './App.css';
+import './App.css'
+import Header from './components/Header';
+import Home from './components/Home'
+import Navigator from './navigation/Navigator'
 
 function App() {
   return (
     <div className="App">
-      <CartProvider>
-        <Home />
-      </CartProvider>
+      <Header />
+      <Home />
+      <Navigator />
     </div>
   );
 }

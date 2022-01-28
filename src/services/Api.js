@@ -18,6 +18,16 @@ const getPokemons = async () => {
   }
 }
 
+const getPokemonById =  async(id) => {
+  try {
+    const response = await api.get(`pokemon/ditto/${id}`)
+    return response.data
+  } catch(error) {
+    console.error(error)
+  }
+}
+
 export {
-  getPokemons
+  getPokemons,
+  getPokemonById
 }
